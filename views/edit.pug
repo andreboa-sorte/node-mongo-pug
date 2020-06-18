@@ -1,0 +1,21 @@
+
+extends layout
+block content
+  form(action="/edit/"+article._id, method="post").form-group
+   label Distance:
+   input.form-control(name="distance", type="text", required, value=article.distance)
+   label Consume:
+   input.form-control(name="consume", type="text", step="any", required, value=article.consume)
+   label Speed:
+   input.form-control(name="speed", type="text", step="any", required, value=article.speed)
+   label Temp Inside:
+   input.form-control(name="temp_inside", type="text", step="any", required, value=article.temp_inside)
+   label Temp Outside:
+   input.form-control(name="temp_outside", type="text", step="any", required, value=article.temp_outside)
+   label Specials:
+   input.form-control(name="specials", type="text", step="any", required, value=article.specials)
+   br
+   input.btn.btn-primary(type='submit', value='Submit')
+  
+
+  

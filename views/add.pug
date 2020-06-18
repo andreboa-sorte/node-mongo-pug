@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1 #{nome}
+	form(method='POST',action='/add')
+		.form-group
+			label Distance:
+			input.form-control(name='distance',type='text')
+		.form-group
+			label Consume:
+			input.form-control(name='consume',type='text')
+		.form-group
+			label Speed:
+			input.form-control(name='speed',type='text')
+		.form-group
+			label Temp Inside:
+			input.form-control(name='temp_inside',type='text')
+		.form-group
+			label Temp Outside:
+			input.form-control(name='temp_outside',type='text')
+			.form-group
+			label Specials:
+			input.form-control(name='specials',type='text')
+		.form-group
+			input.btn.btn-primary(type='submit',value='Submit')
